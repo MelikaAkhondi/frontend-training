@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Patua+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sniglet:wght@400;800&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover; /* بک‌گراند تمام صفحه باشد */
+  background-position: center; /* مرکز بک‌گراند */
+  background-repeat: no-repeat; /* از تکرار جلوگیری شود */
+}
+
+.navbar{
+  background: transparent;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+}
+.navbar-nav{
+  left: -10px;
+}
+.SectionFirst{
+  background-image: url('images/background.png'); /* لینک یا مسیر تصویر */
+  background-size: cover; /* تصویر تمام صفحه */
+  background-position: center; /* مرکز کردن تصویر */
+  background-attachment: fixed; /* ثابت کردن تصویر */
+  background-repeat: no-repeat; /* جلوگیری از تکرار */
+}
+
+.main-section{
+  height: 150vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: -190px;
+}
+.bg-light {
+  position: relative !important;
+  z-index: 10 !important;
+}
+.image-text{
+  margin-left: 70px;
+  margin-top: 60px;
+}
+.image-box{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.content-section{
+  /* height: 800px;  */
+  background-color: white;
+  padding: 50px 0;
+}
+.chef-image{
+  width: 450px;
+  /* margin-left: 50px; */
+}
+.textone{
+  font-family: "Montserrat", serif;
+  letter-spacing: 8px;
+}
+.textwo{
+  font-family: "Playfair Display", serif;
+  font-size: 90px;
+}
+.textthree{
+  font-family: "Playfair Display", serif;
+  font-size: 90px;
+}
+.textfour{
+  font-style: italic;
+  display: inline-block;
+  vertical-align: super;
+  margin-right:0.5px;
+  font-size: 30px;
+  
+}
+.order-btn{
+  width: 150px;
+  height: 50px;
+  margin-top: 170px;
+  border-radius: 50px;
+  border: none;
+  background-color:#d8cdc5 ;
+  transition: 0.3s;
+}
+.order-btn:hover{
+  background-color: #583c00;
+  color: #fff;
+  text-decoration: underline;
+  opacity: 1;
+}
+.main{
+  margin-bottom: 5px;
+}
+.after-main {
+  font-family: "Playfair Display", serif; 
+  color: #756F63; 
+  font-size: 50px;
+  text-align: center; 
+  margin-bottom: 20px; /* فاصله زیر عنوان */
+}
+
+.after-main1 {
+  font-family: "Montserrat", serif; 
+  color: #b3a9a3; 
+  font-size: 18px; 
+  text-align: center;
+  letter-spacing: 1px; 
+  margin-bottom: 10px;
+}
+
+.after-main1::after {
+  content: ""; /* اضافه کردن خط افقی */
+  display: block;
+  width: 70px; 
+  height: 1px;
+  background-color: #b3a9a3;
+  margin: 10px auto;
+}
+
+.after-main2 {
+  font-family: "Montserrat", serif;
+  color: #756F63;
+  font-size: 13px;
+  line-height: 1.8; /* فاصله خطوط متن */
+  text-align: justify; /* تراز متن برای زیبایی بیشتر */
+  margin: 20px auto; /* فاصله بالای متن */
+}
+
+.after-main3{
+  font-family: "Montserrat", serif;
+  color: #756F63;
+  font-size: 13px;
+  line-height: 1.8; /* فاصله خطوط متن */
+  text-align: justify; /* تراز متن برای زیبایی بیشتر */
+  margin: 20px auto;
+
+}
+
+
+
+
+/* second background video */
+/* استایل برای بخش پارالاکس */
+/* استایل اصلی ویدیو */
+.ParallaxVideo {
+  position: relative; /* موقعیت کانتینر ثابت می‌ماند */
+  height: 800px; /* ارتفاع پارالاکس */
+  overflow: hidden; /* جلوگیری از نمایش بخش‌های اضافی */
+  padding: 0; /* حذف فاصله‌های داخلی */
+}
+
+.ParallaxVideo video {
+  position: fixed; /* محدود کردن ویدیو به داخل کانتینر */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* تراز وسط */
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; /* ویدیو در پس‌زمینه قرار می‌گیرد */
+  pointer-events: none; /* جلوگیری از تعامل کاربر با ویدیو */
+}
+
+
+
+.catering-section {
+  padding: 40px 0;
+  align-items: center;
+  justify-content: center;
+}
+.text-container {
+  display: flex;
+  flex-direction: column; /* عناصر داخل به ترتیب عمودی */
+  justify-content: center; /* وسط‌چین کردن عمودی */
+  align-items: center; /* وسط‌چین کردن افقی */
+  text-align: center; /* متن‌های درون عناصر وسط‌چین شود */
+  height: 100%; /* ارتفاع کل ستون */
+  padding: 20px; /* فاصله داخلی */
+  margin-top: 90px;
+}
+
+.section-title {
+  font-family:"Playfair Display", serif ;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #756F63;
+}
+
+
+.section-subtitle {
+  font-family: "Montserrat", serif ;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 17px;
+  color: #756F63;
+  margin-bottom: 20px;
+}
+.section-subtitle::after {
+  content: ""; /* اضافه کردن خط افقی */
+  display: block;
+  width: 70px; 
+  height: 1px;
+  background-color: #b3a9a3;
+  margin: 10px auto;
+}
+
+.section-description {
+  font-family: "Montserrat", serif ;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #756F63;
+  margin-bottom: 20px;
+}
+
+.view-selection-link {
+  font-family: "Montserrat", serif ;
+  font-weight: normal;
+  font-size: 15px;
+  color: #b3a9a3;
+  margin-top: 40px;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+.view-selection-link:hover{
+  color: #756F63;
+  opacity: 1;
+}
+
+.image-gallery .img-thumbnail {
+  width: 100%;       
+  height: 270px;       
+  object-fit: cover;    /* تصویر بدون تغییر تناسب، فضای خالی را پر کند */
+  border: none;      
+}
+
+.image-gallery .row {
+  display: flex;
+  flex-wrap: wrap;      /* اطمینان از اینکه آیتم‌ها در ردیف جدید می‌روند */
+}
+
+.image-gallery .col-6 {
+  max-width: 50%;       /*  (دو تصویر در یک ردیف) */
+  flex: 0 0 50%;        /* عرض ثابت و یکنواخت برای هر ستون */
+  padding: 5px;         /* فاصله بین تصاویر */
+}
+
+
+.SectionThird{
+  background-image: url('images/background2.png'); /* لینک یا مسیر تصویر */
+  background-size: cover; /* تصویر تمام صفحه */
+  background-position: center; /* مرکز کردن تصویر */
+  background-attachment: fixed; /* ثابت کردن تصویر */
+  background-repeat: no-repeat;
+}
+.main2-section{
+  height: 140vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.textwo2{
+  font-family: "Lobster", serif;
+  font-weight: normal;
+  font-size: 50px;
+}
+.textthree2{
+  font-family: "Montserrat", serif ;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.content-section{
+  height: 50%;
+}
+
+.main2{
+  margin-bottom: 5px;
+
+}
+.content-section2{
+  background-size: cover;
+  padding: 50px;
+  background-color: #fff;
+}
+.image-column {
+  display: flex;
+  flex-direction: row; /* چیدمان عمودی تصاویر */
+  gap: 15px; /* فاصله بین تصاویر */
+  justify-content: center;
+  align-items: center; /* تصاویر در مرکز ستون */
+  width: 35%;
+  margin-right: 105px;
+
+}
+.chocolate-image {
+  max-width: 50%; /* اندازه تصویر تطبیقی */
+  height: 470px;
+}
+.second-main{
+  font-family: "Playfair Display", serif; 
+  color: #756F63; 
+  font-size: 50px;
+  text-align: center; 
+  margin-bottom: 20px; /* فاصله زیر عنوان */
+}
+
+.second-main2{
+  font-family: "Montserrat", serif;
+  font-weight: normal; 
+  color: #756F63; 
+  font-size: 15px; 
+  text-align: center;
+  letter-spacing: 1px; 
+  margin-bottom: 10px;
+}
+
+.second-main2::after {
+  content: ""; /* اضافه کردن خط افقی */
+  display: block;
+  width: 70px; 
+  height: 1px;
+  background-color: #b3a9a3;
+  margin: 10px auto;
+}
+
+.second-main3{
+  font-family: "Montserrat", serif;
+  color: #756F63;
+  font-size: 13px;
+  line-height: 1.8; /* فاصله خطوط متن */
+  text-align: center; /* تراز متن برای زیبایی بیشتر */
+  margin: 20px auto; /* فاصله بالای متن */
+}
+
+
+/* foooooooooooooterrrrrrrrrrrrrrrrrrrrrr */
+
+
+.footer{
+  background-color: #adadad;
+  padding: 50px 0;
+}
+.footer-title{
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  color: #756F63;
+}
+.footer-subtitle{
+  font-family: "Montserrat", serif;
+  letter-spacing: 3px;
+  color: #756F63;
+  margin: 20px auto;
+}
+.footer-subtitle::after {
+  content: ""; /* اضافه کردن خط افقی */
+  display: block;
+  width: 70px; 
+  height: 1px;
+  background-color: #b3a9a3;
+  margin: 20px auto;
+}
+.footer-description{
+  font-family: "Montserrat", serif;
+  font-size: 13px;
+  color: #756F63;
+}
+
+/* فرم کلی */
+.contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+/* استایل input و textarea */
+.form-control {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-control:focus {
+  border-color: #555;
+  outline: none;
+  box-shadow: 0 0 5px rgba(85, 85, 85, 0.5);
+}
+
+/* برچسب‌ها */
+label {
+  margin-bottom: 5px;
+  display: block;
+  font-size: 14px;
+  color: #333;
+  font-family:"Montserrat", serif ;
+}
+
+/* دکمه ارسال */
+.btn-submit {
+  padding: 10px 30px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 160px;
+}
+
+.btn-submit:hover {
+  background-color: #333;
+}
+
+/* تنظیمات ریسپانسیو */
+@media (max-width: 768px) {
+  .row .col-md-6 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
