@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Patua+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sniglet:wght@400;800&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.header{
+  background-color: rgb(28, 25, 23);
+  display: grid;
+  padding-top:1rem ;
+  padding-bottom:1rem ;
+  min-height: 100vh;
+}
+.todo-box{
+  background-color:#fff ;
+  place-self: center;
+  width: 25%;
+  max-width: medium;
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  min-height: 550px;
+  border-radius: 20px;
+}
+.title-text{
+  display: flex;
+  align-items: center;
+  margin-top: 1.75rem;
+  gap: 0.5rem;
+  font-family: "Rubik", serif;
+  font-size: 13px;
+}
+.todolist-icon{
+  width: 35px;
+}
+.input-box{
+  display: flex;
+  align-items: center;
+  margin-top:1.75rem ;
+  margin-bottom:1.75rem ;
+  background-color: rgb(229, 231, 235);
+  border-radius: 50px;
+}
+.input-items{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  height: 50px;
+  padding-left: 1.5rem;
+  padding-right: 0.5rem;
+}
+input::placeholder {
+  color: #718096; /* این رنگ معادل slate-600 در Tailwind است */
+}
+.add-btn{
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(234, 88, 12);
+  width: 8rem;
+  height: 3.5rem;
+  color: #fff;
+  font-size: medium;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.items-box{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-top:0.75rem ;
+  margin-bottom:0.75rem ;
+  gap: 0.5rem;
+}
+.items-elements{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.tick-image{
+  width: 25px;
+}
+.items-text{
+  color: #383f4a;
+  margin-left: 1rem;
+  font-size: 17px;
+  font-family: "Lato", serif;
+}
+.line-through {
+  text-decoration: line-through;
+}
+
+.delete-image{
+  width: 17px;
+  cursor: pointer;
+}
