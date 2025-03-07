@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="login2.css" >
+    <title>Log in page</title>
+</head>
+<body>
+    <!--LOGIN IMAGE-->
+    <svg class="login-blob" viewBox="0 0 566 840" xmlns="http://www.w3.org/2000/svg">
+        <mask id="mask0" mask-type="alpha">
+           <path d="M342.407 73.6315C388.53 56.4007 394.378 17.3643 391.538 
+           0H566V840H0C14.5385 834.991 100.266 804.436 77.2046 707.263C49.6393 
+           591.11 115.306 518.927 176.468 488.873C363.385 397.026 156.98 302.824 
+           167.945 179.32C173.46 117.209 284.755 95.1699 342.407 73.6315Z"/>
+        </mask>
+     
+        <g mask="url(#mask0)">
+           <path d="M342.407 73.6315C388.53 56.4007 394.378 17.3643 391.538 
+           0H566V840H0C14.5385 834.991 100.266 804.436 77.2046 707.263C49.6393 
+           591.11 115.306 518.927 176.468 488.873C363.385 397.026 156.98 302.824 
+           167.945 179.32C173.46 117.209 284.755 95.1699 342.407 73.6315Z"/>
+     
+           <!-- Insert your image (recommended size: 1000 x 1200) -->
+           <image class="login-img" href="img/bg-img.jpg"/>
+        </g>
+     </svg>
+
+     <!-- LOGIN -->
+      <div class="login container grid" id="loginAccessRegister">
+        <!--LOGIN ACCESS--->
+        <div class="login-access">
+            <h1 class="login-title">Log in to your account</h1>
+
+            <div class="login-area">
+                <form action="" class="login-form">
+                    <div class="login-content grid">
+                        <div class="login-box">
+                            <input type="email" id="email" placeholder=" " class="login-input">
+                            <label for="email" class="login-label">Email</label>
+                            <i class="ri-mail-fill login-icon"></i>
+                        </div>
+                    
+                    <div class="login-box">
+                        <input type="password" id="password" placeholder=" " class="login-input">
+                        <label for="password" class="login-label">Password</label>
+
+                        <i class="ri-eye-off-fill login-icon login-password" id="loginPassword"></i>
+                    </div>
+                </div>
+                <a href="#" class="login-forgot">Forgot your password?</a>
+
+                <button type="submit" class="login-button">Login</button>
+
+                </form>
+                <div class="login-social">
+                    <p class="login-social-title">Or login with</p>
+
+                    <div class="login-social-links">
+                        <a href="#" class="login-social-link">
+                            <img src="img/icon-google.svg" alt="" class="login-social-img">
+                        </a>
+                        <a href="#" class="login-social-link">
+                            <img src="img/icon-facebook.svg" alt="" class="login-social-img">
+                        </a>
+                        <a href="#" class="login-social-link">
+                            <img src="img/icon-apple.svg" alt="" class="login-social-img">
+                        </a>
+                    </div>
+
+                </div>
+                <p class="login-switch">
+                    Don't have an account?
+                    <button id="loginButtonRegister">Create Account</button>
+                </p>
+            </div>
+        </div>
+
+
+
+        <!--LOGIN REGISTER-->
+        <div class="login-register">
+            <h1 class="login-title">Create new account.</h1>
+            <div class="login-area">
+                <form action="" class="login-form">
+                    <div class="login-content grid">
+                        <div class="login-group grid">
+                            <div class="login-box">
+                                <input type="text" id="names" placeholder="" class="login-input">
+                                <label for="names" class="login-label">Names</label>
+                                <i class="ri-id-card-fill login-icon"></i>
+                            </div>
+                            <div class="login-box">
+                                <input type="text" id="surnames" placeholder="" class="login-input">
+                                <label for="surnames" class="login-label">Surnames</label>
+                                <i class="ri-id-card-fill login-icon"></i>
+                            </div>
+                        </div>
+                            <div class="login-box">
+                                <input type="email" id="emailCreate" placeholder="" class="login-input">
+                                <label for="emailCreate" class="login-label">Email</label>
+                                <i class="ri-mail-fill login-icon"></i>
+                            </div>
+                            <div class="login-box">
+                                <input type="password" id="passwordCreate" placeholder="" class="login-input">
+                                <label for="passwordCreate" class="login-label">Password</label>
+                                <i class="ri-eye-off-fill login-icon login-password" id="loginPasswordCreate"></i>
+                        </div>
+                     </div>
+                     <button type="submit" class="login-button">Create account</button>
+                </form>
+                <p class="login-switch">
+                    Already have an account?
+                    <button id="loginButtonAccess">Log In</button>
+                </p>
+
+            </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+    <script src="login2.js"></script>
+
+    
+</body>
+</html>
