@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8" />
+    <!--این تگ responsive بودن رو نشون میده و قسمت اخر تگ میگه که بدون کوچیک نمایی و بزرگ نمایی ااینکار انجام بشه-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>Skype website</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="skype.css" />
+    <style>
+
+      .top-text {
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        -webkit-text-fill-color: transparent;
+        padding: 100px;
+        background-image: linear-gradient(90deg, #0078d4, #c218ec);
+      }
+
+      .down-text {
+        font-size: medium;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+      }
+
+      /* ssssssssssssssssssssssssssssssssssssssssssssssssss */
+      .microsoft-logo {
+        padding-top: 10px;
+        padding-left: 10px;
+      }
+      .icon-khat {
+        font-size: 30px;
+        margin-left: 17px;
+        margin-right: 10px;
+        padding: 0px 10px 0;
+      }
+      .icon {
+        display: flex;
+        align-items: center;
+      }
+      .skype-header {
+        padding-top: 10px;
+        padding-bottom: 0px;
+        border: 2px solid white;
+        box-sizing: border-box;
+        text-decoration: none !important;
+        font-size: 17px;
+        color: black;
+      }
+      .skype-header:hover {
+        color: black;
+        border-bottom: 2px solid black !important;
+      }
+      .header-nav {
+        display: flex;
+        padding-left: 2%;
+        padding-right: 6%;
+        width: 100%;
+      }
+      nav {
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+      }
+      .navbar-list {
+        padding: 0px;
+        display: flex;
+        margin: 0px;
+        list-style-type: none;
+      }
+      .list-option {
+        /* margin: 5px; */
+        padding: 9px 9px 4px 9px;
+        margin-bottom: 5px;
+        text-decoration: none !important;
+        border-bottom: 2px solid white !important;
+      }
+      .list-option:hover {
+        border-bottom: 2px solid black !important;
+      }
+      .navbar-list a {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        display: flex;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: 1px solid transparent;
+        gap: 13px;
+      }
+      .list-option:hover {
+        text-decoration: underline;
+        transition: fill 0.3s;
+      }
+      /*gjgjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjuuuuuu*/
+      /* استایل دکمه اصلی کشویی */
+      .dropdown-toggle {
+        background-color: white;
+        border: none;
+        font-size: 12px;
+        cursor: pointer;
+        padding: 10px 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #333;
+        display: inline-block;
+      }
+      .dropdown-button {
+        padding: 0px 8px;
+        border: 2px solid white;
+        padding-top: 4px;
+        padding-bottom: 3px;
+      }
+      .dropdown-button:hover {
+        border-bottom: 2px solid black !important;
+      }
+
+      .dropdown-toggle:focus {
+        outline: none;
+      }
+
+      /* منوی کشویی */
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: rgb(233, 233, 233);
+        min-width: 200px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 2px;
+        padding: 10px 0;
+        border: 1px solid #ddd;
+        width: max-content;
+      }
+      .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .dropdown-button {
+    cursor: pointer;
+  }
+      /* .dropdown-menu:hover{
+  text-decoration: underline;
+} */
+
+      .dropdown-item {
+        margin: 0px;
+        color: black;
+
+        text-decoration: none;
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        padding: 10px 20;
+        white-space: nowrap;
+      }
+
+      .dropdown-item:hover {
+        background-color: #f1f1f1;
+        transition: fill 0.3s;
+        text-decoration: underline;
+      }
+      .dropdown {
+        display: flex;
+        align-items: center;
+      }
+      /* llllllllllllllllllllllllllllllllllllllllllllllllllllllllll */
+      .navbar-last-part {
+        padding-top: 7px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-left: auto;
+      }
+
+      .last-part-a {
+        text-decoration: none !important;
+        font-size: 13px;
+        color: #333333;
+        border-bottom: 2px solid white;
+        /* padding-top: 7px;
+  padding-bottom: 2px; */
+        padding: 7px 20px 2px 20px;
+      }
+      .last-part-a:hover {
+        color: black;
+        border-bottom: 2px solid black;
+      }
+      @media (max-width: 768px) {
+  .navbar-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-last-part {
+    justify-content: center;
+  }
+}
+
+
+
+      /* ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss */
+      .body1 {
+        padding-top: 0px;
+      }
+      /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+      .carousel-control-prev,
+      .carousel-control-next {
+        width: 5%;
+        color: black;
+      }
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-color: black;
+        border-radius: 50%;
+      }
+      /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+
+
+      /* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+
+      
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.u-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.c-carousel {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.c-carousel__wrapper.swiper {
+  margin: 0 48px;
+  position: static;
+}
+
+.c-carousel__inner-wrapper.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.c-carousel img {
+  margin: 0 auto;
+}
+
+.c-carousel__controls {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-carousel__button--next,
+.c-carousel__button--prev {
+  cursor: pointer;
+}
+
+.c-carousel__button--prev.swiper-button-disabled,
+.c-carousel__button--next.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.c-carousel__item.swiper-slide {
+  max-width: 300px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="header-nav row align-items-center">
+        <!-- لوگو و متن اسکایپ -->
+        <div class="icon col-lg-3 col-md-4 col-sm-6 d-flex align-items-center">
+          <a href="#" class="navbar-brand mb-0 microsoft-logo h1">
+            <img src="img/skype logo.png" height="23" style="margin-left: 28px" />
+          </a>
+          <span class="icon-khat mx-2">|</span>
+          <a class="skype-header" href="#">Skype</a>
+        </div>
+    
+        <!-- ناوبری اصلی -->
+        <nav class="col-lg-6 col-md-8 col-sm-12">
+          <ul class="navbar-list d-flex flex-wrap justify-content-center">
+            <li class="list-option"><a href="#">Downloads</a></li>
+            <li class="list-option"><a href="#">Skype to phone</a></li>
+            <li class="list-option"><a href="#">Skype Number</a></li>
+            <li class="list-option"><a href="#">Features</a></li>
+    
+            <!-- Dropdown for Products -->
+            <div class="dropdown">
+              <button
+                class="dropdown-toggle dropdown-button"
+                id="productsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Products
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                <li><a class="dropdown-item" href="#">Meet Now</a></li>
+                <li><a class="dropdown-item" href="#">Skype Manager</a></li>
+                <li><a class="dropdown-item" href="#">Skype with Alexa</a></li>
+                <li><a class="dropdown-item" href="#">Skype for content creators</a></li>
+                <li><a class="dropdown-item" href="#">Skype for Business</a></li>
+              </ul>
+            </div>
+    
+            <!-- Dropdown for Help -->
+            <div class="dropdown">
+              <button
+                class="dropdown-toggle dropdown-button"
+                data-bs-toggle="dropdown"
+                id="helpDropdown"
+                role="button"
+                aria-expanded="false"
+              >
+                Get help
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="helpDropdown">
+                <li><a class="dropdown-item" href="#">Skype Support</a></li>
+                <li><a class="dropdown-item" href="#">Blogs</a></li>
+                <li><a class="dropdown-item" href="#">Community</a></li>
+                <li><a class="dropdown-item" href="#">About Skype</a></li>
+              </ul>
+            </div>
+          </ul>
+        </nav>
+    
+        <!-- دکمه‌های "Host a meeting" و "Sign in" -->
+        <div class="navbar-last-part col-lg-3 col-md-12 d-flex justify-content-end">
+          <div class="host">
+            <a href="#" class="right-option last-part-a">Host a meeting</a>
+          </div>
+          <div class="dropdown ms-3">
+            <button
+              class="dropdown-toggle dropdown-button btn btn-primary"
+              id="signInDropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Sign in
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="signInDropdown">
+              <li><a class="dropdown-item" href="#">My account</a></li>
+              <li><a class="dropdown-item" href="#">Use Skype online</a></li>
+              <li><a class="dropdown-item" href="#">New to Skype?</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <section class="body1">
+      <svg width="97%" height="100%">
+        <defs>
+          <!-- تعریف گرادیان خطی -->
+          <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#0156d1;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#aa3ec8;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <rect
+          class="svg-content"
+          x="50"
+          y="30"
+          rx="20"
+          ry="30"
+          width="95%"
+          height="100%"
+          style="
+            margin-left: 10%;
+            fill: rgb(212, 212, 212);
+            stroke: rgb(255, 255, 255);
+            stroke-width: 0;
+            opacity: 0.5;
+          "
+        />
+        <image
+          href="img/web_skype_image_big_screens_optimized.png"
+          x="630"
+          y="100"
+          width="790"
+          height="500"
+        ></image>
+
+        <text class="top-text" x="200" y="280" fill="url(#text-gradient)" >
+          Great video calls
+        </text>
+        <text class="top-text" x="198" y="340" fill="url(#text-gradient)" >with Skype</text>
+        <text class="down-text" x="198" y="390" fill="#404040">
+          High quality video calling makes it easy to be together
+        </text>
+        <text class="down-text" x="198" y="410" fill="#404040">
+          wherever you are.
+        </text>
+        <rect
+          id="button"
+          x="200"
+          y="460"
+          width="200"
+          height="50"
+          rx="30"
+          ry="30"
+          style="fill: #0078d4; cursor: pointer"
+          onmouseover="this.style.fill='#0056a1'"
+          onmouseout="this.style.fill='#0078d4'"
+        ></rect>
+        <text
+          x="296"
+          y="490"
+          fill="#FFFFFF"
+          font-size="16"
+          text-anchor="middle"
+          font-weight="bold"
+        >
+          Download Skype
+        </text>
+        <a href="#" class="text-link">
+          <text x="198" y="550" fill="#579ecf">Open Skype in your browser</text>
+        </a>
+      </svg>
+    </section>
+
+    <div class="featureshome">
+      <p class="center-text" style="margin-left: 480px; margin-top: 90px">
+        Discover more from Skype
+      </p>
+    </div>
+
+
+<section class="body2">
+    <div class="container swiper">
+      <div class="card-wrapper">
+        <ul class="cardlist swiper-wrapper">
+          <li class="carditem swiper-slide">
+            <div href="#" class="card-link">
+              <img src="img/download (1).jfif" alt="Card image" 
+              class="card-image">
+              <h2 class="card-title">Safe and secure by design</h2>
+              <p class="discription">Your safety and the security of your calls and messages is crucial to us. Here are some tools and features we've designed to help you stay safe while using Skype.</p>
+              <a href="#" class="link-in-card">Read more >
+              </a>
+            </div>
+          </li>
+          <li class="carditem swiper-slide">
+            <div href="#" class="card-link">
+              <img src="img/1718121968426.jfif" alt="Card image" 
+              class="card-image">
+              
+              <h2 class="card-title">Safe and secure by design</h2>
+              <p class="discription">Your safety and the security of your calls and messages is crucial to us. Here are some tools and features we've designed to help you stay safe while using Skype.</p>
+              <a href="#" class="link-in-card">Read more ></a>
+            </div>
+          </li>
+          <li class="carditem swiper-slide">
+            <div href="#" class="card-link">
+              <img src="img/download (3).jfif" alt="Card image" 
+              class="card-image">
+              
+              <h2 class="card-title">Safe and secure by design</h2>
+              <p class="discription">Your safety and the security of your calls and messages is crucial to us. Here are some tools and features we've designed to help you stay safe while using Skype.</p>
+              <a href="#" class="link-in-card">Read more ></a>
+            </div>
+          </li>
+          <li class="carditem swiper-slide">
+            <div href="#" class="card-link">
+              <img src="img/download.jfif" alt="Card image" 
+              class="card-image">
+              
+              <h2 class="card-title">Safe and secure by design</h2>
+              <p class="discription">Your safety and the security of your calls and messages is crucial to us. Here are some tools and features we've designed to help you stay safe while using Skype.</p>
+              <a href="#" class="link-in-card">Read more ></a>
+            </div>
+          </li>
+          <li class="carditem swiper-slide">
+            <div href="#" class="card-link">
+              <img src="img/download (2).jfif" alt="Card image" 
+              class="card-image">
+              
+              <h2 class="card-title">Safe and secure by design</h2>
+              <p class="discription">Your safety and the security of your calls and messages is crucial to us. Here are some tools and features we've designed to help you stay safe while using Skype.</p>
+              <a href="#" class="link-in-card">Read more ></a>
+            </div>
+          </li>
+          <li class="carditem swiper-slide">
+            <div href="#" class="card-link">
+              <img src="img/img4.jfif" alt="Card image" 
+              class="card-image">
+              
+              <h2 class="card-title">Safe and secure by design</h2>
+              <p class="discription">Your safety and the security of your calls and messages is crucial to us. Here are some tools and features we've designed to help you stay safe while using Skype.</p>
+              <a href="#" class="link-in-card">Read more ></a>
+            </div>
+          </li>
+          <li class="carditem swiper-slide">
+            <div href="#" class="card-link">
+              <img src="img/download (5).jfif" alt="Card image" 
+              class="card-image">
+              
+              <h2 class="card-title">Safe and secure by design</h2>
+              <p class="discription">Your safety and the security of your calls and messages is crucial to us. Here are some tools and features we've designed to help you stay safe while using Skype.</p>
+              <a href="#" class="link-in-card">Read more ></a>
+            </div>
+          </li>
+          <li class="carditem swiper-slide">
+            <div href="#" class="card-link">
+              <img src="img/img7.jfif" alt="Card image" 
+              class="card-image">
+              
+              <h2 class="card-title">Safe and secure by design</h2>
+              <p class="discription">Your safety and the security of your calls and messages is crucial to us. Here are some tools and features we've designed to help you stay safe while using Skype.</p>
+              <a href="#" class="link-in-card">Read more ></a>
+            </div>
+          </li>
+          <li class="carditem swiper-slide">
+            <div href="#" class="card-link">
+              <img src="img/img6 - Copy.jfif" alt="Card image" 
+              class="card-image">
+              
+              <h2 class="card-title">Safe and secure by design</h2>
+              <p class="discription">Your safety and the security of your calls and messages is crucial to us. Here are some tools and features we've designed to help you stay safe while using Skype.</p>
+              <a href="#" class="link-in-card">Read more ></a>
+            </div>
+          </li>
+          <li class="carditem swiper-slide">
+            <div href="#" class="card-link">
+              <img src="img/download (8).jfif" alt="Card image" 
+              class="card-image">
+              
+              <h2 class="card-title">Safe and secure by design</h2>
+              <p class="discription">Your safety and the security of your calls and messages is crucial to us. Here are some tools and features we've designed to help you stay safe while using Skype.</p>
+              <a href="#" class="link-in-card">Read more ></a>
+            </div>
+          </li>
+          <li class="carditem swiper-slide">
+            <div href="#" class="card-link">
+              <img src="img/download (9).jfif" alt="Card image" 
+              class="card-image">
+              
+              <h2 class="card-title">Safe and secure by design</h2>
+              <p class="discription">Your safety and the security of your calls and messages is crucial to us. Here are some tools and features we've designed to help you stay safe while using Skype.</p>
+              <a href="#" class="link-in-card">Read more ></a>
+            </div>
+          </li>
+          <li class="carditem swiper-slide">
+            <div href="#" class="card-link">
+              <img src="img/download (10).jfif" alt="Card image" 
+              class="card-image">
+              
+              <h2 class="card-title">Safe and secure by design</h2>
+              <p class="discription">Your safety and the security of your calls and messages is crucial to us. Here are some tools and features we've designed to help you stay safe while using Skype.</p>
+              <a href="#" class="link-in-card">Read more ></a>
+            </div>
+          </li>
+          <li class="carditem swiper-slide">
+            <div href="#" class="card-link">
+              <img src="img/download (11).jfif" alt="Card image" 
+              class="card-image">
+              
+              <h2 class="card-title">Safe and secure by design</h2>
+              <p class="discription">Your safety and the security of your calls and messages is crucial to us. Here are some tools and features we've designed to help you stay safe while using Skype.</p>
+              <a href="#" class="link-in-card">Read more ></a>
+            </div>
+          </li>
+          <li class="carditem swiper-slide">
+            <div href="#" class="card-link">
+              <img src="img/download (12).jfif" alt="Card image" 
+              class="card-image">
+              
+              <h2 class="card-title">Safe and secure by design</h2>
+              <p class="discription">Your safety and the security of your calls and messages is crucial to us. Here are some tools and features we've designed to help you stay safe while using Skype.</p>
+              <a href="#" class="link-in-card">Read more ></a>
+            </div>
+          </li>
+          <li class="carditem swiper-slide">
+            <div href="#" class="card-link">
+              <img src="img/download (13).jfif" alt="Card image" 
+              class="card-image">
+              
+              <h2 class="card-title">Safe and secure by design</h2>
+              <p class="discription">Your safety and the security of your calls and messages is crucial to us. Here are some tools and features we've designed to help you stay safe while using Skype.</p>
+              <a href="#" class="link-in-card">Read more ></a>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-slide-button swiper-button-prev"></div>
+        <div class="swiper-slide-button swiper-button-next"></div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </section>
+
+  <div class="berfor-content">
+    <ul class="list-content">
+      <li class="list-content-item">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">YouTube</a>
+        <a href="#">Blogs</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="befot2-content">
+    <img  src="img/phone_disabled_16dp_000000_FILL0_wght400_GRAD0_opsz20.png" class="img-befor">
+    <p class="p-befor">Limited emergency calling</p>
+    <p class="p2-befor">Skype is not a replacement for your telephone and has limited emergency calling capabilities depending on your country.</p>
+    <a  href="#" class="link-befor">Learn more about emergency calling supporting.</a>
+  </div>
+
+
+  <div class="footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>What's new</h3>
+
+        <ul>
+          <li><a href="#">Surface Pro</a></li>
+          <li><a href="#">Surface Laptop</a></li>
+          <li><a href="#">Surface Laptop Studio 2</a></li>
+          <li><a href="#">Surface Laptop Go 3</a></li>
+          <li><a href="#">Microsoft Copilot</a></li>
+          <li><a href="#">AI in Windows</a></li>
+          <li><a href="#">Explore Microsoft products</a></li>
+          <li><a href="#">Windows 11 apps</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Microsoft Store</h3>
+
+        <ul>
+          <li><a href="#">Account profile</a></li>
+          <li><a href="#">Download Center</a></li>
+          <li><a href="#">Microsoft Store support</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Order tracking</a></li>
+          <li><a href="#">Certified Refurbished</a></li>
+          <li><a href="#">Microsoft Store Promise</a></li>
+          <li><a href="#">Flexible Payments</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Education</h3>
+
+        <ul>
+          <li><a href="#">Microsoft in education</a></li>
+          <li><a href="#">Devices for education</a></li>
+          <li><a href="#">Microsoft Teams for Education</a></li>
+          <li><a href="#">Microsoft 365 Education</a></li>
+          <li><a href="#">How to buy for your school</a></li>
+          <li><a href="#">Educator training and development</a></li>
+          <li><a href="#">Deals for students and parents</a></li>
+          <li><a href="#">Azure for students</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Business</h3>
+
+        <ul>
+          <li><a href="#">Microsoft Cloud</a></li>
+          <li><a href="#">Microsoft Security</a></li>
+          <li><a href="#">Dynamics 365</a></li>
+          <li><a href="#">Microsoft 365</a></li>
+          <li><a href="#">Microsoft Power Platform</a></li>
+          <li><a href="#">Microsoft Teams</a></li>
+          <li><a href="#">Microsoft 365 Copilot</a></li>
+          <li><a href="#">Small Business</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Developer & IT</h3>
+
+        <ul>
+          <li><a href="#">Azure</a></li>
+          <li><a href="#">Developer Center</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Microsoft Learn</a></li>
+          <li><a href="#">Microsoft Tech Community</a></li>
+          <li><a href="#">Azure Marketplace</a></li>
+          <li><a href="#">AppSource</a></li>
+          <li><a href="#">Visual Studio</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Company</h3>
+
+        <ul>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About Microsoft</a></li>
+          <li><a href="#">Company news</a></li>
+          <li><a href="#">Privacy at Microsoft</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Diversity and inclusion</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">WSustainability</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="language-privacy-container">
+          <div class="language-selector">
+              <span class="language-icon">🌐</span>
+              <select class="language-dropdown">
+                  <option value="en">English</option>
+                  <option value="fr">Français</option>
+                  <option value="de">Deutsch</option>
+                  <option value="es">Español</option>
+                  <!-- زبان‌های دیگر -->
+              </select>
+          </div>
+          <div class="privacy-section">
+            <img class="privacy-icon" src="img/check_circle_16dp_2854C5_FILL0_wght400_GRAD0_opsz20.png"></img> <!-- می‌توانید از یک آیکون مناسب دیگر نیز استفاده کنید -->
+            <a href="#" class="privacy-link">Your Privacy Choices</a>
+        </div>        
+          <div class="text-health"><a href="#">
+            Consumer Health Privacy
+          </a>
+          </div>
+      </div>
+      <div class="footer-links">
+          <a href="#">Sitemap</a>
+          <a href="#">Contact us</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms of use</a>
+          <a href="#">Trademarks</a>
+          <a href="#">About our ads</a>
+          <a href="#">EU Contract Summary</a>
+          <a href="#">Legal</a>
+      </div>
+      <div class="footer-copyright">
+          © Microsoft 2024
+      </div>
+  </div>
+  
+
+
+</footer>
+
+
+
+
+
+
+
+  
+
+
+        
+      
+   
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+   
+
+    <script>
+      
+
+      
+  const swiper = new Swiper('.swiper', {
+    // modules: [Navigation, A11y],
+    direction: 'horizontal',
+    loop: false,
+    navigation: {
+      nextEl: '.c-carousel__button--next',
+      prevEl: '.c-carousel__button--prev',
+    },
+    slidesPerView: 'auto',
+    spaceBetween: 48,
+    a11y: {
+      prevSlideMessage: 'Previous slide',
+      nextSlideMessage: 'Next slide',
+    },
+  });
+
+    </script>
+  </body>
+</html>

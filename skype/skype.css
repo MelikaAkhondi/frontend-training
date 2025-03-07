@@ -1,0 +1,446 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.header{
+    /*عنصر مورد نظر شما به طور حداقلی به اندازه‌ی ارتفاع کامل صفحه نمایش خواهد بود. این به معنای این است که حتی اگر محتوا کمتر از ارتفاع صفحه باشد، عنصر حداقل به اندازه‌ی کل ارتفاع viewport خواهد بود.*/
+    min-height: 100vh;
+    width: 100%;/*عرض برابر با عرض والد یا صفحه*/
+    background-size: cover;
+    position: relative;
+
+}
+.navbar-nav{
+    font-weight: bold;
+    font-size:x-large;
+}
+
+.custom-link{
+    font-size:small; /* اندازه فونت کوچکتر */
+    font-weight: normal;
+    padding-top:17px
+}
+.right-section {
+    text-align: right; /* تراز کردن متن به سمت راست */
+    padding: 10px; /* فاصله داخلی */
+    color: #323232;
+}
+
+.custom-linkk {
+    font-size: small;
+    font-weight: normal;
+    padding-top: 17px;
+    color: #323232;
+    text-decoration: none; /* حذف خط زیر */
+    margin: 20px;
+}
+.nav-link {
+    position: relative;
+    text-decoration: none; /* حذف خط زیرین پیش‌فرض */
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px; /* ضخامت خط */
+    background: black; /* رنگ خط */
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* فاصله خط از متن */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+.custom-linkk {
+    position: relative;
+    text-decoration: none; /* حذف خط زیرین پیش‌فرض */
+}
+
+.custom-linkk::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px; /* ضخامت خط */
+    background: black; /* رنگ خط */
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* فاصله خط از متن */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.custom-linkk:hover::after {
+    transform: scaleX(1);
+}
+
+.sign-in-options{
+    border: none;
+    width: 8px;
+    
+}
+
+.body1{
+    width: -15px;
+    height: 700px;
+    padding: 10px;
+    margin: 0px;
+}
+.text-link {
+    text-decoration: none;
+    color: #579ecf;
+    transition: color 0.3s;
+    
+}
+.hover-text a{
+    color: #000000;
+    transition: fill 0.3s; /* انیمیشن نرم */
+}
+
+.hover-text a:hover {
+    color: #000000; /* رنگ جدید هنگام هاور */
+    text-decoration: none;
+}
+.top-text{
+    background-image: linear-gradient(bottom right,#0156d1,#aa3ec8);
+}
+
+.a {
+    color: #000000;
+    transition: fill 0.3s; /* انیمیشن نرم */
+}
+
+.a:hover {
+    color: #000000; /* رنگ جدید هنگام هاور */
+}
+.center-text{
+    font-size: 38px;
+    font-weight: bolder;
+    color: #363636;
+}
+.img-wrapper{
+    max-width: 90%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+
+}
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+
+.card-list,.card-link,.card-title{
+    margin: 7px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+    text-align: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    
+    
+}
+.card-title{
+    font-size: medium;
+    padding: 40px 40px 50px;
+}
+.discription{
+    padding: 40px 40px 50px;
+    margin-top: -70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter ;
+    color: #323232;
+}
+
+.body2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(255, 255, 255);
+}
+.card-wrapper{
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    
+}
+.card-list ,.carditem{
+    list-style: none;
+    text-align: center;
+    
+}
+.card-list ,.carditem ,.card-link{
+    user-select:none ;
+    display: block;
+    background: rgb(255, 255, 255);
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: 0.2s ease;
+    
+}
+.card-link {
+    user-select: none;
+    display: block;
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    text-decoration: none;
+    border: 0.5px solid #a2a2a2; /* حاشیه مشکی */
+    transition: 0.2s ease;
+    padding: 0;
+}
+
+.card-image{
+    margin: 0;
+    width: 100%;
+    position: relative;
+    display: block;
+    background-size: cover;
+    background-position: bottom center;
+    background-color: #f2f2f2;
+    border-top-right-radius: 20px;
+}
+.card-list,.card-link, .card-image{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card-list,.card-link{
+    margin: 0px;
+}
+.card-wrapper,.swiper-slide-button{
+    color: #000000;
+
+}
+.swiper-slide-button{
+    border: 2px solid #000000;
+    border-radius: 90%;
+    width: 55px;
+    height: 55px;
+}
+.swiper-slide-button:hover{
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.carditem{
+    padding: 0.5px;
+    width: 92px;
+ 
+}
+.link-in-card {
+    display: inline-block;
+    padding: 40px 40px 50px;
+    color: #0078d7; /* رنگ لینک */
+    font-weight: normal;
+    text-decoration: none;
+    margin-right: 96px;
+}
+
+.link-in-card:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+/* nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
+.list-content{
+    padding-right: 50px 10px 60px;
+    margin-left: 150px;
+    margin-top: 80px;
+}
+.list-content-item a{
+    padding: 10px;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+    font-family: Arial,'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+.list-content-item{
+    list-style: none;
+
+}
+.card-icon{
+    width: 25px;
+    margin-left: 100px;
+    margin-top: -23px;
+}
+
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+.befot2-content{
+    padding: 64px; 
+}
+
+.img-befor{
+    margin-left:1140px;
+    width: 30px;
+    margin-top: -95px;
+}
+.p-befor{
+    margin-left:1170px;
+    margin-bottom: 60px;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: -25px;
+    
+}
+.p2-befor{
+    margin-left:680px;
+    font-size: small;
+    margin-top: -55px;
+
+}
+.link-befor{
+    font-size: small;
+    margin-left: 1100px;
+}
+/* bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb */
+.footer{
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    color: #666;
+    font-size: 14px;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+.footer-column{
+    flex: 1;
+    min-width: 150px;
+    padding: 10px;
+}
+.footer-column h3{
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.footer-column ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-column ul li{
+    margin-bottom: 8px;
+    font-size: smaller;
+}
+.footer-column li a{
+    color: #666;
+    text-decoration: none;
+}
+.footer-column li a:hover{
+    text-decoration: underline;
+}
+.footer-buttom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto 0;
+    padding: 20px 0;
+    border-top: 1px solide #ccc;
+    font-size: 12px;
+}
+.language-privacy-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+.language-selector{
+    display: flex;
+    align-items: center;
+    margin-left: 120px;
+}
+.language-icon{
+    font-size: x-large;
+    margin-right: 5px;
+}
+.language-dropdown {
+    width: 169px;
+    padding: 12px;
+    font-size: 12px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    outline: none;
+}
+.privacy-section {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* فاصله بین آیکون و متن */
+    font-size: 0.9em;
+}
+
+.privacy-icon {
+    color: #0078d4; 
+    font-size: 1.1em; 
+    width: 20px;
+}
+
+.privacy-link {
+    color: #666; /* رنگ لینک */
+    text-decoration: none; /* حذف زیرخط از لینک */
+}
+
+.privacy-link:hover {
+    text-decoration: underline; 
+    color: #666; 
+}
+
+.text-health a{
+    color: #353535;
+    text-decoration: none;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+}
+.text-health{
+    margin-top: 20px;
+}
+.text-health a:hover{
+    text-decoration: underline;
+}
+.footer-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 12px;
+    margin-left: 700px;
+}
+.footer-links a{
+    text-decoration: none;
+    color: #666;
+}
+.footer-links a:hover{
+    text-decoration: underline;
+}
+.footer-copyright{
+    font-size: small;
+    color: #666;
+    margin-left: 1320px;
+    margin-top: -18px;
+}
